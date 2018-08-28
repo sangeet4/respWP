@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.wrapr{
+    margin: 0 auto;
+}
+
+header{
+    top: 0;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header h2{
+    margin: 0;
+    padding: 8px;
+    border: 1px solid burlywood;
+    text-align: center;
+    background-color: black;
+    color: aquamarine;
+    font-size: 8vw;
+}
+
+section{
+    color: white;
+    min-height: 1000px;
+    margin: 0px 20px 20px;
+    display: flex;
+    padding-top: 210px;
+    font-family: 'Gloria Hallelujah', cursive;
+    align-items: centre;
+    font-size: 1vw;
+}
+
+section .art1, .art3{
+    flex-flow: column wrap;
+    flex-basis: 20%;
+    background-color: rgba(135, 206, 235, 0.3);
+    margin: 20px;
+    padding: 8px;
+}
+
+section .art2{
+    flex-flow: column wrap;
+    flex: 3;
+    margin: 20px;
+}
+
+.navig{
+    list-style: none;
+    margin: 0;
+    padding: 0.3em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background: rgb(90, 180, 220);
+}
+
+.navig li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.navig li a:hover{
+    background: rgb(50, 115, 212);
+    color: black
+}
+
+.navig li{
+    flex:1;   
+}
+
+.navig a{
+        
+    padding: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navig ul:last-child a{
+    border-bottom: none;
+}
+
+@media (min-width: 800px) {
+    .navig{
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        /*border:1px solid goldenrod;*/
+        margin: 0;
+        padding: 0;
+        background: rgb(90, 180, 220);
+        font-size: 2vw;
+    }
+    .navig li{
+        flex:1;
+    }
+    
+    .navig a{
+        padding: 6px;
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        border-right: 1px solid rgba(0, 0, 0, 1);
+    }
+}
+
+@media (max-width: 600px) {
+    .navig{
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+        /*border:1px solid goldenrod;*/
+        margin: 0;
+        padding: 0;
+        background: rgb(90, 180, 220);
+    }
+    
+    .navig li{
+        flex:1;
+    }
+    
+    
+}
