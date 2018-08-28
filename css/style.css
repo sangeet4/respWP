@@ -1,6 +1,10 @@
 body{
     margin: 0;
-    background: url("../img/bg.jpg") no-repeat center;
+    background-image: url("https://stmed.net/sites/default/files/purple-turquoise-blue-wallpapers-25282-3817324.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
     background-size: cover;
 }
 .wrapr{
@@ -17,46 +21,17 @@ header{
 
 header h2{
     margin: 0;
-    padding: 8px;
+    padding: 0.2em;
     border: 1px solid burlywood;
     text-align: center;
     background-color: black;
-    color: aquamarine;
-    font-size: 8vw;
-}
-
-section{
-    color: white;
-    min-height: 1000px;
-    margin: 0px 20px 20px;
-    display: flex;
-    padding-top: 210px;
-    font-family: 'Gloria Hallelujah', cursive;
-    align-items: centre;
-    font-size: 1vw;
-}
-
-section .art1, .art3{
-    flex-flow: column wrap;
-    flex-basis: 20%;
-    background-color: rgba(135, 206, 235, 0.3);
-    margin: 20px;
-    padding: 8px;
-}
-
-section .art2{
-    flex-flow: column wrap;
-    flex: 3;
-    margin: 20px;
+    text-shadow: 0 0 0.4em rgba(90, 180, 220, 0.9);
+    /* font-size: 8vw; */
 }
 
 .navig{
     list-style: none;
     margin: 0;
-    padding: 0.3em;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
     background: rgb(90, 180, 220);
 }
 
@@ -65,7 +40,7 @@ section .art2{
     display: block;
     color: white;
     text-align: center;
-    font-size: 2vw;
+    /* font-size: 2vw; */
 }
 
 .navig li a:hover{
@@ -79,7 +54,7 @@ section .art2{
 
 .navig a{
         
-    padding: 6px;
+    padding: 0.2em;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
     border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -90,42 +65,131 @@ section .art2{
     border-bottom: none;
 }
 
+section{
+    color: black;
+    min-height: 1000px;
+    margin: 0em 1em;
+    padding: 0 0.5em;
+    font-family: 'Gloria Hallelujah', cursive;
+    /* font-size: 1vw; */
+}
+
+.article{
+    margin: 1.5em;
+    padding: 0.8em;
+}
+
+.art1, .art3{ 
+    
+    background-color: rgba(135, 206, 235, 0.3);
+}
+
+.hero{
+    margin: 4em;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.hero img:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+
+}
+
+/* .hero:hover img, .hero:focus img {
+  transform: scale(1.2);
+} */
+
 @media (min-width: 800px) {
+    header h2{
+        font-size: 8vw;
+    }
+
     .navig{
         display: flex;
         flex-flow: row wrap;
-        list-style: none;
         /*border:1px solid goldenrod;*/
-        margin: 0;
-        padding: 0;
-        background: rgb(90, 180, 220);
+        padding: 0.3em;
         font-size: 2vw;
     }
-    .navig li{
-        flex:1;
+
+    .hero{
+        padding-top: 16vw;
+    }
+    section{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .art1, .art3{
+        flex-basis: 25%;
+    }
+
+    .art2{
+        flex-basis: 40%;
+        flex: 2;
+    }
+
+}
+
+@media (max-width: 800px) {
+    header h2{
+        font-size: 8vw;
+    }
+
+    section{
+        font-size: 2vw;
+    }
+
+    .navig{
+        padding: 0.1em;
+        background: rgb(90, 180, 220);
+        font-size: 4vw;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .hero{
+        padding-top: 18vw;
     }
     
-    .navig a{
-        padding: 6px;
-        border-left: 1px solid rgba(255, 255, 255, 0.3);
-        border-right: 1px solid rgba(0, 0, 0, 1);
+    section{
+        font-size: 2vw;
+    }
+
+    .article{
+        display: flex;
+        flex-flow: row wrap;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px){
+    header h2{
+        font-size: 8vw;
+    }
+
     .navig{
         display: flex;
         flex-flow: column wrap;
-        list-style: none;
-        /*border:1px solid goldenrod;*/
-        margin: 0;
-        padding: 0;
+        padding: 0.1em;
         background: rgb(90, 180, 220);
+        font-size: 4vw;
+    }
+
+    .hero{
+        padding-top: 10em;
     }
     
-    .navig li{
-        flex:1;
+    section{
+        font-size: 2vw;
     }
-    
-    
+
+    .article{
+        display: flex;
+        flex-flow: row wrap;
+    }
 }
