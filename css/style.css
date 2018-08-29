@@ -85,19 +85,17 @@ section{
 }
 
 .hero{
-    margin: 4em;
+    margin: 0;
 }
 
 .hero img{
     width: 100%;
-    height: auto;
-    opacity: 0.8;
+    height: 100%;
+    opacity: 0.6;
 }
 
 .hero img:hover{
-    opacity: 0.6;
-    transform: scale(1.2);
-
+    opacity: 0.9;
 }
 
 /* .hero:hover img, .hero:focus img {
@@ -118,7 +116,7 @@ section{
     }
 
     .hero{
-        padding-top: 16vw;
+        margin-top: 15%;
     }
     section{
         display: flex;
@@ -133,7 +131,6 @@ section{
         flex-basis: 40%;
         flex: 2;
     }
-
 }
 
 @media (max-width: 800px) {
@@ -154,7 +151,7 @@ section{
     }
 
     .hero{
-        padding-top: 18vw;
+        margin-top: 18%
     }
     
     section{
@@ -169,7 +166,7 @@ section{
 
 @media (max-width: 400px){
     header h2{
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
     .navig{
@@ -177,11 +174,11 @@ section{
         flex-flow: column wrap;
         padding: 0.1em;
         background: rgb(90, 180, 220);
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .hero{
-        padding-top: 10em;
+        margin-top: 46%;
     }
     
     section{
