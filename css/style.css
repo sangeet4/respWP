@@ -2,7 +2,6 @@ body{
     margin: 0;
     background-image: url("https://stmed.net/sites/default/files/purple-turquoise-blue-wallpapers-25282-3817324.jpg");
     height: 100%;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -43,7 +42,7 @@ header h2{
     /* font-size: 2vw; */
 }
 
-.navig li a:hover{
+.hdr li a:hover{
     background: rgb(50, 115, 212);
     color: black
 }
@@ -67,21 +66,38 @@ header h2{
 
 section{
     color: black;
-    min-height: 1000px;
     margin: 0em 1em;
-    padding: 0 0.5em;
+    padding: 0  0 0.5em;
     font-family: 'Gloria Hallelujah', cursive;
     /* font-size: 1vw; */
 }
 
-.article{
-    margin: 1.5em;
-    padding: 0.8em;
+section figure{
+    margin: 1em;
 }
 
-.art1, .art3{ 
-    
-    background-color: rgba(135, 206, 235, 0.3);
+section a{
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover{
+    color: whitesmoke
+}
+
+section img{
+    width: 100%
+}
+
+section h3, h5{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+article{
+    background-color: rgba(135, 206, 235, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(255, 255, 255,0.3)
 }
 
 .hero{
@@ -91,11 +107,51 @@ section{
 .hero img{
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.9;
+    transition: 1s ease;
+    
 }
 
-.hero img:hover{
-    opacity: 0.9;
+.hero:hover img {
+    opacity: 0.4;
+}
+
+footer{
+    background-color: black;
+}
+
+footer h3{
+    margin: 1em auto;
+    padding-top: 1em;
+    color: gray;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.copyright p{
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: gray
+}
+
+#fb{
+    background-color: rgb(59, 89, 152);
+}
+
+#gplus{
+    background-color: rgb(219,68,55);
+}
+
+#rt{
+    background-color: rgb(0, 172, 237);
+}
+
+#insta{
+    background-color: rgb(195, 42, 163);
+}
+
+#git{
+    background-color: rgb(0, 0, 0);
 }
 
 /* .hero:hover img, .hero:focus img {
@@ -123,13 +179,13 @@ section{
         flex-flow: row wrap;
     }
 
-    .art1, .art3{
-        flex-basis: 25%;
+    .article{
+        flex: 1;
+        margin: 1em;
     }
 
-    .art2{
-        flex-basis: 40%;
-        flex: 2;
+    footer p{
+        font-size: 0.8vw
     }
 }
 
@@ -138,7 +194,11 @@ section{
         font-size: 8vw;
     }
 
-    section{
+    section h3{
+        font-size: 3vw;
+    }
+
+    section h5{
         font-size: 2vw;
     }
 
@@ -155,16 +215,24 @@ section{
     }
     
     section{
-        font-size: 2vw;
+        display: flex;
+        flex-flow: column nowrap;
     }
 
     .article{
-        display: flex;
-        flex-flow: row wrap;
+        flex: 1;
+    }
+
+    footer h3{
+        font-size: 2vw;
+    }
+
+    footer p{
+        font-size: 1vw;
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 425px){
     header h2{
         font-size: 10vw;
     }
@@ -178,15 +246,36 @@ section{
     }
 
     .hero{
-        margin-top: 46%;
+        margin-top: 45%;
+    }
+
+    section h3{
+        font-size: 4vw;
+    }
+
+    section h5{
+        font-size: 3vw;
     }
     
     section{
-        font-size: 2vw;
+        display: flex;
+        flex-flow: column wrap;
     }
 
     .article{
-        display: flex;
-        flex-flow: row wrap;
+        flex: 1;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    footer h3{
+        font-size: 3vw;
+    }
+
+    footer p{
+        font-size: 1vw;
     }
 }
