@@ -94,8 +94,38 @@ section h6{
 }
 
 article{
-    background-color: rgba(135, 206, 235, 0.5);
+    
     border-right: 1px solid rgba(255, 255, 255,0.3);
+}
+
+.main1 article{
+    height: 100%;
+    background-color: rgba(135, 206, 235, 0.5);
+}
+
+.main2 article{
+    height: 100%;
+    background-color: rgba(135, 206, 235, 0.5);
+}
+
+.main3 .article{
+    width: 300%
+}
+
+.main3 img{
+    opacity: 0.8;
+}
+
+.main4 img:hover{
+    opacity: 1;
+}
+
+.main4 img{
+    opacity: 0.8;
+}
+
+.main4 img:hover{
+    opacity: 1;
 }
 
 .hero{
@@ -264,7 +294,6 @@ footer h3{
         flex: 1;
     }
 
-    footer
 
     footer h3{
         font-size: 2vw;
