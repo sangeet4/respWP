@@ -72,10 +72,10 @@ section a{
 }
 
 section img{
-    width: 100%
+    width: 100%;
 }
 
-section h3, h5{
+section h3, h6, h5{
     margin-left: 2vw;
     margin-right: 2vw;
 }
@@ -88,9 +88,12 @@ section h5{
     font-weight: 200;
 }
 
+section h6{
+    color: #ff1e3c;
+}
+
 article{
     background-color: rgba(135, 206, 235, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(255, 255, 255,0.3)
 }
 
@@ -211,7 +214,7 @@ footer h3{
     section{
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-end;
+        align-items: stretch;
     }
 
     .article{
@@ -308,7 +311,17 @@ footer h3{
     }
 
     footer{
-        display: block;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    footer .navig li{
+        width: 100%;
+    }
+
+    footer .navig a{
         text-align: center;
     }
 
